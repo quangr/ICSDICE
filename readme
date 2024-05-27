@@ -1,0 +1,23 @@
+you may run following command to install dependencies
+
+```
+pip install -r requirements.txt
+pip install -U "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install git+https://github.com/quangr/dejax.git
+```
+
+if you also want  to collect data from trained agent
+pip install stable_baselines3 --no-dependencies
+
+# Point Maze 
+
+to run Point Maze compare: `jupyter nbconvert --to notebook --execute --inplace icrl/maze/exp/train.ipynb --ExecutePreprocessor.timeout=-1`
+
+# Grid-World
+
+to run Grid-World env with our method: ` jupyter nbconvert --to notebook --execute --inplace icrl/grid_world/ICSDICE.ipynb --ExecutePreprocessor.timeout=-1`
+to run Grid-World env with RECOIL-V: `python icrl/grid_world/recoil-V.py`
+
+# Mujoco
+
+to run mujoco env with our method: `python icrl/benchmark/ICSDICE.py --seed 1 --alpha=0.0001 --total-timesteps=1000000 --debug=False --update-period=100000 --beta=0.5 --env-id=Ant_ls --cost-l2=0.0005 --cost-limit=0.9 --expert-ratio 1.0`

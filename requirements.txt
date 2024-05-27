@@ -1,0 +1,12 @@
+optax==0.1.8
+flax==0.8.2
+orbax-checkpoint==0.2.5
+scipy==1.12.0
+envpool
+plotly
+gymnasium-robotics
+wandb
+tensorboard
+notebook
+matplotlib
+-e .

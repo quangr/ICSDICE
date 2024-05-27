@@ -12,6 +12,9 @@ pip install -U "jax[cuda]==0.4.23" -f https://storage.googleapis.com/jax-release
 pip install git+https://github.com/quangr/dejax.git
 ```
 
+Then you can download the [dataset](https://drive.google.com/file/d/1l-ZPAGL5szssgY0Y3boSnoUj-T12hJ1J/view?usp=sharing) and put under the `./dataset`.
+
+
 # Point Maze 
 
 to run Point Maze compare: `jupyter nbconvert --to notebook --execute --inplace icrl/maze/exp/train.ipynb --ExecutePreprocessor.timeout=-1`
